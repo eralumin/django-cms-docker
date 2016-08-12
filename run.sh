@@ -1,14 +1,10 @@
 #!/bin/bash
 
 
-djangocms -f -p -q . myapp &> /dev/null
-echo "$?"
-if [ $? -ne 0 ]; then
-echo "if"
-#	python manage.py runserver
+if test "$(ls -A "/usr/src/app" &> /dev/null)"; then
+	python manage.py runserver
 else
-echo "else"
-	djangocms -f -p . myapp
-#	python manage.py runserver
-echo "$?""
+	read -p "Project Name: " projectname
+	djangocms -f -p . $projectname
+	python manage.py runserver
 fi
