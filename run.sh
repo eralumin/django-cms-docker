@@ -4,10 +4,15 @@
 cd /home/myapp
 
 djangocms -f -p -q . myapp &> /dev/null
-echo "$?"""
+echo "$?"
 if [ $? -ne 0 ]; then
-	python manage.py runserver
+echo "if"
+#	python manage.py runserver
+/bin/bash
 else
+echo "else"
 	djangocms -f -p . myapp
-	python manage.py runserver
+#	python manage.py runserver
+echo "$?""
+/bin/bash
 fi
