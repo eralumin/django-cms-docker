@@ -1,8 +1,6 @@
 #!/bin/bash
 
 
-cd /home/myapp
-
 djangocms -f -p -q . myapp &> /dev/null
 echo "$?"
 if [ $? -ne 0 ]; then
