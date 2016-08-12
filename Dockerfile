@@ -22,6 +22,3 @@ WORKDIR /usr/src/app
 ADD https://rawgit.com/daimebag/django-cms-docker/master/run.sh /usr/src
 
 CMD sh /usr/src/run.sh
-
-# Django languages:
-# https://github.com/django/django/blob/master/django/conf/global_settings.py#L50
