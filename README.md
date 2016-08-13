@@ -11,13 +11,13 @@
 Just run:
 ```
 docker run --name [ContainerName] -it -p [HostPort]:8000 daimebag/django-cms[Tag]
-```
-  
-If you need some help for installation of DjangoCMS, go to [the documentation](https://djangocms-installer.readthedocs.io/en/stable/readme.html) for more information.  
+```   
+    
+If you need some help for installation of DjangoCMS, go to [the documentation](https://djangocms-installer.readthedocs.io/en/stable/readme.html) for more information.    
 
 While installation, DjangoCMS asks which language(s) you want to use. All languages available are listed [here](https://github.com/django/django/blob/master/django/conf/global_settings.py#L50).  
 
 After installation, you can stop the container and restart it, the widget automatically launch the DjangoCMS server if the installation has already been done.  
 
 > **Note:**
-> The variable `DEBUG` has the value `True` by default.
+> The variable `DEBUG` has the value `True` by default. Change it if you want to push your site in production.
