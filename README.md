@@ -17,7 +17,7 @@ If you need some help for installation of DjangoCMS, go to [the documentation](h
 
 While installation, DjangoCMS asks which language(s) you want to use. All languages available are listed [here](https://github.com/django/django/blob/master/django/conf/global_settings.py#L50).  
 
-After installation, you can stop the container and restart it, the widget automatically launch the DjangoCMS server if the installation has already been done.  
+After installation, you can stop the container and restart it, the container automatically launch the DjangoCMS server if the installation has already been done.  
 
 > **Note:**
 > The variable `DEBUG` has the value `True` by default. Change it if you want to push your site in production.
