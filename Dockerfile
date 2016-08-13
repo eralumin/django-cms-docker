@@ -4,6 +4,7 @@ MAINTAINER kevin.marilleau@gmail.com
 
 # required for Pillow to find zlib-dev; don't change!
 ENV LIBRARY_PATH /lib:/usr/lib
+ENV TZ UTC
 
 # always required sources for django-cms
 RUN apk add --no-cache --virtual .build-deps \
