@@ -1,10 +1,18 @@
-FROM python:latest
+FROM python:alpine
 
-MAINTAINER kevin.marilleau@gmail.com 
+MAINTAINER kevin.marilleau@gmail.com
 
-EXPOSE 8000 
+# required for Pillow to find zlib-dev; don't change!
+ENV LIBRARY_PATH /lib:/usr/lib
 
-RUN pip install --no-cache-dir djangocms-installer
+# always required sources for django-cms
+RUN apk add --no-cache --virtual .build-deps \
+ build-base \
+ zlib-dev \
+ && apk add --no-cache \
+ jpeg-dev \
+# run the latest djangocms installer but only have it install dependencies and then cleanup
+ && pip install --no-cache-dir djangocms-installer
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
