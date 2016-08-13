@@ -4,6 +4,7 @@ MAINTAINER kevin.marilleau@gmail.com
 
 LABEL Description="Django-CMS"
 
+EXPOSE 80
 # required for Pillow to find zlib-dev; don't change!
 ENV LIBRARY_PATH /lib:/usr/lib
 
