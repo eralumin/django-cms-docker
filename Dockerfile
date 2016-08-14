@@ -18,6 +18,6 @@ RUN apk add --no-cache --virtual .build-deps \
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
-ADD https://rawgit.com/daimebag/django-cms-docker/master/run.sh /usr/src
+ADD https://rawgit.com/daimebag/django-cms-docker/alpine/run.sh /usr/src
 
 CMD sh /usr/src/run.sh
