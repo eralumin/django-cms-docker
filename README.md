@@ -3,8 +3,11 @@
 
 **Tag list with Dockerfile links:**
 
-- [`:latest`](https://github.com/daimebag/django-cms-docker/blob/master/) [(latest/Dockerfile)](https://github.com/daimebag/django-cms-docker/blob/master/Dockerfile)
-- [`:alpine`](https://github.com/daimebag/django-cms-docker/blob/alpine/) [(latest/alpine/Dockerfile)](https://github.com/daimebag/django-cms-docker/blob/alpine/Dockerfile)
+- [`:latest`](https://github.com/daimebag/django-cms-docker/tree/master/) [(latest/Dockerfile)](https://github.com/daimebag/django-cms-docker/blob/master/Dockerfile)
+- [`:alpine`](https://github.com/daimebag/django-cms-docker/tree/alpine/) [(latest/alpine/Dockerfile)](https://github.com/daimebag/django-cms-docker/blob/alpine/Dockerfile)
+- [`:test`](https://github.com/daimebag/django-cms-docker/tree/test/) [(latest/test/Dockerfile)](https://github.com/daimebag/django-cms-docker/blob/test/Dockerfile) 
+
+> The "test" version run "/bin/sh" instead of "python manage.py runserver 0.0.0.0:8000"
 
 ----------
 
