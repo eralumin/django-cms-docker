@@ -6,6 +6,6 @@ if test "$(ls -A "/usr/src/app" &> /dev/null)"; then
 	python manage.py runserver 0.0.0.0:8000
 else
 	read -p "Project Name: " projectname
-	djangocms -f -p . $projectname
+	djangocms -w -f -p . $projectname
 	python manage.py runserver 0.0.0.0:8000
 fi
