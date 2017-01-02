@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.4
 
 MAINTAINER kevin.marilleau@gmail.com 
 
