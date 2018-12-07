@@ -9,6 +9,6 @@ RUN pip install --no-cache-dir djangocms-installer
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
-ADD https://rawgit.com/daimebag/django-cms-docker/master/run.sh /usr/src
+ADD https://cdn.jsdelivr.net/gh/daimebag/django-cms-docker/run.sh /usr/src
 
 CMD sh /usr/src/run.sh
